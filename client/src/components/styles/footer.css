@@ -1,0 +1,20 @@
+#footer{
+    margin-top: 60px;
+    background-color: #050505;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    font-size: 24px;
+}
+.redes svg{
+    margin: 0 10px;
+    fill: white;
+}

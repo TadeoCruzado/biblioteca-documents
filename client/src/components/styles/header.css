@@ -1,0 +1,177 @@
+
+/*Header*/
+.header-contenedor{
+    position: fixed;
+    color: #fff;    
+    box-shadow: 0px 1px 0px 0px rgba(255,253,247,.2);
+    width: 100%;
+    z-index: 999;
+    display: flex;
+}
+.header-container-bl{
+    background-color: #050505;
+}
+.header-pags{
+    background-color: #050505;
+    position: relative;
+    display: flex;
+}
+
+.header-bar{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+.titulos{
+    width: 100%;
+    text-align: center;
+}
+.titulos a{
+    font-size: 3vh;
+    font-weight: 200;
+    letter-spacing: 7px;
+}
+.header-bar a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/*-----------*/
+.border-rg{
+    border-right: 1px solid rgba(255,255,255,.2) ;    
+}
+/*-----------*/
+.border-lft{
+    border-left: 1px solid rgba(255,255,255,.2) ;
+}
+/*-----------*/
+
+
+.nomenu{
+    width: 9em;
+    display: none;
+    padding: 0 30px;
+    height: 80px;
+}   
+
+
+/*-----------*/
+.menu-btn button{
+    background-color: transparent;
+    border: none;
+    height: 60px;
+    padding: 0 15px;
+    border-right: 1px solid rgba(255,253,247,.2);
+}
+/*-----------*/
+.bx-menu{
+    font-size: 20px;
+    color: white;
+}
+/*-----------*/
+
+
+/*Overlay--------------------*/
+/*------------------*/
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #202023;
+    transition: clip-path .6s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 1000;
+}
+.overlay-close{
+    clip-path: inset(0 0 100% 0);
+}
+.overlay-open{
+    clip-path: inset(0 0 0 0);
+}
+/*------------------*/
+/*------------------*/
+
+.btn-close-menu{    
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    transition: opacity .4s cubic-bezier(0.77, 0, 0.175, 1),
+        top .4s cubic-bezier(0.77, 0, 0.175, 1), 
+        left .4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.btn-close-menu-active{
+    top: 30px;
+    left: 30px;
+    opacity: 1;
+}
+/*------------------*/
+/*-----------Lista Cont-------*/
+.list-subs{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top .7s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.list-subs-active{
+    top:50%;
+}
+/*------------------*/
+/*-------Lista Oculta-----------*/
+.element-list-subs{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .2em;
+    text-align: center;
+    font-size: 30px;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.element-list-subs-active{
+    opacity: 1;
+}
+/*------------------*/
+.bx-x{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 768px) {
+    .nomenu{
+        display: block;
+    }
+    .menu-btn{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nomenu{
+        display: block;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .header-bar{
+        justify-content: space-between;
+    }
+}
