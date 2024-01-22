@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Header } from '../components/Header'
 import { useBook } from '../context/LibroProvider'
 import { useNavigate, useParams } from 'react-router-dom';
-import '../components/styles/libroinfo.css'
+
 import {Footer} from '../components/Footer'
 
 const LibroInfo = () => {
